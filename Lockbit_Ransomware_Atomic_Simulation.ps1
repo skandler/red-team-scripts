@@ -80,7 +80,7 @@ Invoke-AtomicTest T1003.001 -TestNumber 6 -GetPrereqs
 Invoke-AtomicTest T1003.001 -TestNumber 6
 
 # Atomic Test #13 - Tamper with Windows Defender ATP PowerShell
-Invoke-AtomicTest T1562.001 -TestNumbers 5
+Invoke-AtomicTest T1562.001 -TestNumbers 16
 
 # Atomic Test #14 - Windows - Stop service by killing process
 Invoke-AtomicTest T1489 -TestNumbers 3
@@ -89,13 +89,13 @@ Invoke-AtomicTest T1489 -TestNumbers 3
 Invoke-AtomicTest T1484.001 -TestNumbers 2
 
 # Atomic Test #16 - LockBit Black - Disable Privacy Settings Experience Using Registry -cmd
-Invoke-AtomicTest T1484.001 -TestNumbers 32
+Invoke-AtomicTest T1562.001 -TestNumbers 32
 
 # Atomic Test #17 - LockBit Black - Use Registry Editor to turn on automatic logon -cmd
-Invoke-AtomicTest T1484.001 -TestNumbers 33
+Invoke-AtomicTest T1562.001 -TestNumbers 33
 
 # Atomic Test #18 - LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell
-Invoke-AtomicTest T1484.001 -TestNumbers 34
+Invoke-AtomicTest T1562.001 -TestNumbers 34
 
 # Atomic Test #19 - Disable Microsoft Defender Firewall via Registry
 Invoke-AtomicTest T1562.004 -TestNumbers 2
@@ -127,3 +127,6 @@ Invoke-AtomicTest T1491.001 -TestNumbers 1
 
 # Atomic Test #27 - Clear Logs
 Invoke-AtomicTest T1070.001 -TestNumbers 1
+
+# Atomic Test #27 - Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell
+Invoke-AtomicTest T1562.001 -TestNumbers 35
