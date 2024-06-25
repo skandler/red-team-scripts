@@ -128,5 +128,8 @@ Invoke-AtomicTest T1491.001 -TestNumbers 1
 # Atomic Test #27 - Clear Logs
 Invoke-AtomicTest T1070.001 -TestNumbers 1
 
-# Atomic Test #27 - Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell
+# Atomic Test #28 - Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell
 Invoke-AtomicTest T1562.001 -TestNumbers 35
+
+# Atomic Test #29 - Lockbit Black - Disable Windows Defender with PwSh Disable-WindowsOptionalFeature
+Invoke-AtomicTest T1562.001 -TestNumbers 36
